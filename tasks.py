@@ -20,7 +20,7 @@ def echo_response(message):
       r = requests.get("https://api.korbit.co.kr/v1/ticker")
       bitcoin_price = r.json()["last"]
       msg = "bitcoin price is %s" % bitcoin_price
-      print msg
+      print(msg)
       ReplyToActivity(fill=msg,
                     text=msg).send()
     else:
@@ -49,6 +49,6 @@ def echo_response(message):
       else:
         msg = msg + "You look unhappy.."
 
-      print msg
+      print(msg)
       ReplyToActivity(fill=msg,
                       text=msg).send()
