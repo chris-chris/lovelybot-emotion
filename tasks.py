@@ -21,6 +21,7 @@ def echo_response(message):
       bitcoin_price = r.json()["last"]
       msg = "bitcoin price is %s" % bitcoin_price
       print(msg)
+      msg = [msg]
       ReplyToActivity(fill=msg,
                     text=msg).send()
     else:
@@ -50,5 +51,8 @@ def echo_response(message):
         msg = msg + "You look unhappy.."
 
       print(msg)
+
+      msg = [msg]
+      
       ReplyToActivity(fill=msg,
                       text=msg).send()
