@@ -1,0 +1,6 @@
+{
+  "name": "Bot Framework App Sample",
+  "description": "Bot Framework App Sample",
+  "repository": "https://github.com/chris-chris/lovelybot",
+  "keywords": ["bot framework", "bot", "heroku"]
+}
